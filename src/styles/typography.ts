@@ -10,7 +10,8 @@ export const StyledTitleSpan = styled(BaseTitle)`
     switch (fontSize) {
       case "lg":
         return css`
-          font-size: 50px;
+          font-size: 96px;
+          line-height: 90%;
         `;
       case "md":
         return css`
@@ -25,7 +26,7 @@ export const StyledTitleSpan = styled(BaseTitle)`
 `;
 
 interface IStyledParagraph {
-  fontSize: "md" | "sm";
+  fontSize: "sm" | "md" | "lg";
   fontWeight: 300 | 500;
 }
 
@@ -41,6 +42,10 @@ export const StyledParagraph = styled.p<IStyledParagraph>`
 
   ${({ fontSize }) => {
     switch (fontSize) {
+      case "lg":
+        return css`
+          font-size: 24px;
+        `;
       case "md":
         return css`
           font-size: 14px;

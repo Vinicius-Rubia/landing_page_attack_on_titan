@@ -1,5 +1,6 @@
 import { ITrailer } from "../../../data/database";
 import { FiPlay } from "react-icons/fi";
+import { StyledTrailerCard } from "./style";
 
 interface ITrailerCard {
   trailer: ITrailer;
@@ -7,12 +8,10 @@ interface ITrailerCard {
 
 const TrailerCard = ({ trailer }: ITrailerCard) => {
   return (
-    <div>
-      <div>
-        <img src={trailer.capa} alt="Capa - Trailer" />
-        <FiPlay fontSize={20} /> <span>{trailer.ep}</span>
-      </div>
-    </div>
+    <StyledTrailerCard>
+      <img src={trailer.capa} alt="Capa - Trailer" />
+      <div><FiPlay fontSize={25} /> <span>{trailer.ep}</span></div>
+    </StyledTrailerCard>
   );
 };
 

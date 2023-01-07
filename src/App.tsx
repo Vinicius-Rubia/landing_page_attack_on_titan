@@ -5,10 +5,10 @@ import Trailer from "./components/Trailer";
 function App() {
   return (
     <div className="App">
-      <ContentText />
+      <ContentText className="contentText" />
       <div>
-        <Slide />
-        <Trailer />
+        <Slide className="slider" />
+        <Trailer className="trailer" />
       </div>
     </div>
   );

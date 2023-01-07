@@ -25,4 +25,20 @@ export const trailerData: ITrailer[] = [
     capa: Trailer4,
     ep: "#4",
   },
+  {
+    capa: Trailer1,
+    ep: "#1",
+  },
+  {
+    capa: Trailer2,
+    ep: "#2",
+  },
+  {
+    capa: Trailer3,
+    ep: "#3",
+  },
+  {
+    capa: Trailer4,
+    ep: "#4",
+  },
 ];

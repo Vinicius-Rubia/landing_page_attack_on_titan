@@ -5,16 +5,24 @@ import {
   IoIosArrowDropleftCircle,
 } from "react-icons/io";
 
-const Slide = () => {
+interface ISlide {
+  className: string;
+}
+
+const Slide = ({ className }: ISlide) => {
   return (
-    <StyledSlide>
+    <StyledSlide className={className}>
       <img src={Capa} alt="Imagem de Capa" />
-      <div>
+      <div className="controls">
         <div>
           <IoIosArrowDropleftCircle fontSize={45} />
           <IoIosArrowDroprightCircle fontSize={45} />
         </div>
-        <div>01 - 10</div>
+        <div className="slide-counter">
+          <span className="start">01</span>
+          <hr className="line-counter" />
+          <span className="end">10</span>
+        </div>
       </div>
     </StyledSlide>
   );
