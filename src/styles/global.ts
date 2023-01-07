@@ -1,4 +1,5 @@
 import { createGlobalStyle } from "styled-components";
+import Background from "../img/background.png";
 
 export const GlobalStyle = createGlobalStyle`
   * {
@@ -8,6 +9,11 @@ export const GlobalStyle = createGlobalStyle`
     list-style: none;
     text-decoration: none;
     font-family: "Rubik", sans-serif;
+  }
+
+  body {
+    background: url(${Background}) no-repeat;
+    background-size: cover;
   }
 
   button {

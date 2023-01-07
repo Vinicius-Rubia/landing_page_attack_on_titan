@@ -1,15 +1,16 @@
 import styled, { css } from "styled-components";
 import BaseTitle from "./components/Typography";
 
-export const StyledTitle = styled(BaseTitle)`
+export const StyledTitleSpan = styled(BaseTitle)`
   font-weight: ${({ fontWeight }) => fontWeight};
   color: ${({ theme }) => theme.colors.whitePrimary};
+  display: block;
 
   ${({ fontSize }) => {
     switch (fontSize) {
       case "lg":
         return css`
-          font-size: 85px;
+          font-size: 50px;
         `;
       case "md":
         return css`
@@ -24,12 +25,13 @@ export const StyledTitle = styled(BaseTitle)`
 `;
 
 interface IStyledParagraph {
-  fontSize: "md";
+  fontSize: "md" | "sm";
+  fontWeight: 300 | 500;
 }
 
 export const StyledParagraph = styled.p<IStyledParagraph>`
   color: ${({ theme }) => theme.colors.whiteSecondary};
-  font-weight: 300;
+  font-weight: ${({ fontWeight }) => fontWeight};
 
   strong,
   b {
@@ -42,6 +44,10 @@ export const StyledParagraph = styled.p<IStyledParagraph>`
       case "md":
         return css`
           font-size: 14px;
+        `;
+      case "sm":
+        return css`
+          font-size: 10px;
         `;
     }
   }}
