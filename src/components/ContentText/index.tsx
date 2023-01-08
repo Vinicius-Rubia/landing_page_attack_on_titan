@@ -11,7 +11,7 @@ export interface IContentText {
 const ContentText = ({ className }: IContentText) => {
   return (
     <StyledContentText className={className}>
-      <div>
+      <div className="menu">
         <RiMenu2Fill fontSize={32} />
       </div>
       <div>

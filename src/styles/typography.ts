@@ -10,16 +10,16 @@ export const StyledTitleSpan = styled(BaseTitle)`
     switch (fontSize) {
       case "lg":
         return css`
-          font-size: 96px;
+          font-size: 9.6rem;
           line-height: 90%;
         `;
       case "md":
         return css`
-          font-size: 24px;
+          font-size: 2.4rem;
         `;
       case "sm":
         return css`
-          font-size: 16px;
+          font-size: 1.6rem;
         `;
     }
   }}
@@ -44,15 +44,15 @@ export const StyledParagraph = styled.p<IStyledParagraph>`
     switch (fontSize) {
       case "lg":
         return css`
-          font-size: 24px;
+          font-size: 2.4rem;
         `;
       case "md":
         return css`
-          font-size: 14px;
+          font-size: 1.4rem;
         `;
       case "sm":
         return css`
-          font-size: 10px;
+          font-size: 1rem;
         `;
     }
   }}

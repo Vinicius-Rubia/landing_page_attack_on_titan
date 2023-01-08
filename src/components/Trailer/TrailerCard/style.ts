@@ -1,18 +1,22 @@
 import styled from "styled-components";
 
 export const StyledTrailerCard = styled.div`
-  min-width: 220px;
+  min-width: 22rem;
   color: ${({ theme }) => theme.colors.whitePrimary};
   position: relative;
-  margin-top: 16px;
+  margin-top: 1.6rem;
 
   div {
     position: absolute;
-    left: 15px;
-    bottom: 15px;
-    font-size: 18px;
+    left: 1.5rem;
+    bottom: 1.5rem;
+    font-size: 1.8rem;
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 1rem;
+  }
+
+  @media (max-width: 600px) {
+    min-width: 15rem;
   }
 `;

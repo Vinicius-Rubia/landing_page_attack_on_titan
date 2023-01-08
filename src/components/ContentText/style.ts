@@ -3,25 +3,24 @@ import styled from "styled-components";
 export const StyledContentText = styled.section`
   grid-area: contentText;
   display: flex;
-  padding: 60px;
-  gap: 45px;
+  padding: 6em;
+  gap: 4.5em;
 
   svg {
     color: ${({ theme }) => theme.colors.whitePrimary};
   }
 
   h1 {
-    margin-top: 150px;
+    margin-top: 15rem;
   }
 
   .watch {
-    margin: 24px 0;
+    margin: 2.4rem 0;
     display: flex;
-    gap: 20px;
+    gap: 2rem;
 
     P {
-      letter-spacing: 10px;
-      font-family: 24px;
+      letter-spacing: 1rem;
       color: ${({ theme }) => theme.colors.whitePrimary};
       font-weight: 300;
     }
@@ -29,50 +28,65 @@ export const StyledContentText = styled.section`
 
   .description {
     P {
-      line-height: 21px;
-      letter-spacing: 2px;
+      line-height: 2.1rem;
+      letter-spacing: .2rem;
     }
   }
 
   .social-media {
-    margin-top: 64px;
+    margin-top: 6.4rem;
     display: flex;
-    gap: 50px;
+    gap: 5rem;
   }
 
   @media (max-width: 1200px) {
-    display: block;
-    padding: 30px 25px;
-
-    .logo {
-      margin-top: 30px;
+    .menu {
+      position: absolute;
+      inset: 4em 3em auto auto;
     }
 
+    display: block;
+    padding: 3rem 2.5rem;
+
     h1 {
-      margin-top: 100px;
+      margin-top: 10rem;
+    }
+
+    .description {
+      width: 70%;
     }
   }
 
-  @media (max-width: 400px) {
-    padding: 30px 10px;
+  @media (max-width: 600px) {
+    padding: 3rem 1rem;
+
+    .menu {
+      position: initial;
+      display: flex;
+      justify-content: center;
+    }
 
     .logo {
-      margin-top: 30px;
+      display: flex;
+      margin: 3rem auto 0;
     }
 
     h1 {
-      margin-top: 100px;
-
       span {
-        font-size: 70px;
+        font-size: 7rem;
       }
     }
 
     .watch {
       P {
-        letter-spacing: 7px;
+        letter-spacing: .7rem;
       }
-  }
+    }
+
+    .description {
+      width: 100%;
+      text-align: justify;
+    }
 
     .social-media {
       gap: 0;

@@ -7,7 +7,7 @@ export const StyledTrailer = styled.section`
   .card-trailer {
     overflow-x: auto;
     display: flex;
-    gap: 20px;
+    gap: 2rem;
 
     ::-webkit-scrollbar {
       display: none;
@@ -15,15 +15,15 @@ export const StyledTrailer = styled.section`
   }
 
   @media (max-width: 1200px) {
-    margin: 0 25px;
+    margin: 0 2.5rem;
 
     .card-trailer {
       display: flex;
-      gap: 10px;
+      gap: 1rem;
     }
   }
 
-  @media (max-width: 400px) {
-    margin: 0 10px;
+  @media (max-width: 600px) {
+    margin: 0 1rem;
   }
 `;

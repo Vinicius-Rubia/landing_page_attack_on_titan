@@ -8,18 +8,18 @@ export const StyledSlide = styled.section`
   .controls {
     display: flex;
     justify-content: space-between;
-    margin: 16px 0 30px;
+    margin: 1.6rem 0 3rem;
 
     svg {
       color: ${({ theme }) => theme.colors.whiteSecondary};
     }
 
     .slide-counter {
-      margin-right: 25px;
+      margin-right: 2.5rem;
       display: flex;
       align-items: center;
-      gap: 15px;
-      font-size: 20px;
+      gap: 1.5rem;
+      font-size: 2rem;
       font-weight: 500;
 
       .start {
@@ -31,8 +31,8 @@ export const StyledSlide = styled.section`
       }
 
       .line-counter {
-        width: 64px;
-        height: 3px;
+        width: 6.4rem;
+        height: .3rem;
         background: ${({ theme }) => theme.colors.transparentColor};
       }
     }
@@ -40,20 +40,20 @@ export const StyledSlide = styled.section`
 
   @media (max-width: 1200px) {
     .controls {
-      margin-left: 25px;
+      margin-left: 2.5rem;
     }
   }
 
-  @media (max-width: 400px) {
+  @media (max-width: 600px) {
     .controls {
-      margin-left: 10px;
+      margin-left: 1rem;
 
       svg {
-        font-size: 35px;
+        font-size: 3.5rem;
       }
 
       .slide-counter {
-        margin-right: 10px;
+        margin-right: 1rem;
       }
     }
   }

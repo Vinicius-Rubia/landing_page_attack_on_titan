@@ -11,6 +11,10 @@ export const GlobalStyle = createGlobalStyle`
     font-family: "Rubik", sans-serif;
   }
 
+  html {
+    font-size: 62.5%;
+  }
+
   body {
     background: url(${Background}) no-repeat;
     background-size: cover;
@@ -62,7 +66,7 @@ export const GlobalStyle = createGlobalStyle`
           "contentText"
           "slider"
           "slider";
-        margin-bottom: 30px;
+        margin-bottom: 3rem;
       }
     }
   }
