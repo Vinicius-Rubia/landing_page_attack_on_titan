@@ -18,5 +18,9 @@ export const StyledTrailerCard = styled.div`
 
   @media (max-width: 600px) {
     min-width: 15rem;
+
+    svg {
+      font-size: 2rem;
+    }
   }
 `;

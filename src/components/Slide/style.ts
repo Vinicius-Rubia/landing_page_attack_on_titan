@@ -32,7 +32,7 @@ export const StyledSlide = styled.section`
 
       .line-counter {
         width: 6.4rem;
-        height: .3rem;
+        height: 0.3rem;
         background: ${({ theme }) => theme.colors.transparentColor};
       }
     }

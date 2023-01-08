@@ -29,7 +29,7 @@ export const StyledContentText = styled.section`
   .description {
     P {
       line-height: 2.1rem;
-      letter-spacing: .2rem;
+      letter-spacing: 0.2rem;
     }
   }
 
@@ -37,6 +37,17 @@ export const StyledContentText = styled.section`
     margin-top: 6.4rem;
     display: flex;
     gap: 5rem;
+    transition: .4s;
+
+    li {
+      transition: .4s;
+      cursor: pointer;
+      text-transform: uppercase;
+      
+      &:hover {
+        filter: brightness(60%);
+      }
+    }
   }
 
   @media (max-width: 1200px) {
@@ -79,7 +90,7 @@ export const StyledContentText = styled.section`
 
     .watch {
       P {
-        letter-spacing: .7rem;
+        letter-spacing: 0.7rem;
       }
     }
 

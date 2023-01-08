@@ -10,7 +10,9 @@ const TrailerCard = ({ trailer }: ITrailerCard) => {
   return (
     <StyledTrailerCard>
       <img src={trailer.capa} alt="Capa - Trailer" />
-      <div><FiPlay fontSize={25} /> <span>{trailer.ep}</span></div>
+      <div>
+        <FiPlay fontSize={25} /> <span>{trailer.ep}</span>
+      </div>
     </StyledTrailerCard>
   );
 };

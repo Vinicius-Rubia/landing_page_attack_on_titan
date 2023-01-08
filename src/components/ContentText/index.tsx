@@ -53,24 +53,35 @@ const ContentText = ({ className }: IContentText) => {
         </div>
         <ul className="social-media">
           <li>
-            <StyledParagraph fontSize="sm" fontWeight={500}>
-              FACEBOOK
-            </StyledParagraph>
+            <a href="https://www.facebook.com/vinicius.rubia.9" target="_blank">
+              <StyledParagraph fontSize="sm" fontWeight={500}>
+                Facebook
+              </StyledParagraph>
+            </a>
           </li>
           <li>
-            <StyledParagraph fontSize="sm" fontWeight={500}>
-              TWITTER
-            </StyledParagraph>
+            <a
+              href="https://www.linkedin.com/in/vinicius-rubia-149ab0213/"
+              target="_blank"
+            >
+              <StyledParagraph fontSize="sm" fontWeight={500}>
+                Linkedin
+              </StyledParagraph>
+            </a>
           </li>
           <li>
-            <StyledParagraph fontSize="sm" fontWeight={500}>
-              INSTAGRAM
-            </StyledParagraph>
+            <a href="https://www.instagram.com/vinicius_rubia/" target="_blank">
+              <StyledParagraph fontSize="sm" fontWeight={500}>
+                Instagram
+              </StyledParagraph>
+            </a>
           </li>
           <li>
-            <StyledParagraph fontSize="sm" fontWeight={500}>
-              YOUTUBE
-            </StyledParagraph>
+            <a href="https://www.youtube.com/@putcode" target="_blank">
+              <StyledParagraph fontSize="sm" fontWeight={500}>
+                Youtube
+              </StyledParagraph>
+            </a>
           </li>
         </ul>
       </div>

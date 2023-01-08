@@ -15,7 +15,7 @@ const Trailer = ({ className }: ITrailer) => {
       </StyledTitleSpan>
       <div className="card-trailer">
         {trailerData.map((trailer, index) => (
-            <TrailerCard key={index} trailer={trailer} />
+          <TrailerCard key={index} trailer={trailer} />
         ))}
       </div>
     </StyledTrailer>
