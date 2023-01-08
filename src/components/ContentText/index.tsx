@@ -15,7 +15,7 @@ const ContentText = ({ className }: IContentText) => {
         <RiMenu2Fill fontSize={32} />
       </div>
       <div>
-        <img src={Logo} alt="Logo" />
+        <img className="logo" src={Logo} alt="Logo" />
         <h1>
           <StyledTitleSpan fontSize="lg" fontWeight={300}>
             THE

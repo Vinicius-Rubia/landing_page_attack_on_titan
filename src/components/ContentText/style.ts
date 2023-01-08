@@ -28,15 +28,55 @@ export const StyledContentText = styled.section`
   }
 
   .description {
-      P {
-        line-height: 21px;
-        letter-spacing: 2px;
-      }
+    P {
+      line-height: 21px;
+      letter-spacing: 2px;
     }
+  }
 
   .social-media {
     margin-top: 64px;
     display: flex;
     gap: 50px;
+  }
+
+  @media (max-width: 1200px) {
+    display: block;
+    padding: 30px 25px;
+
+    .logo {
+      margin-top: 30px;
+    }
+
+    h1 {
+      margin-top: 100px;
+    }
+  }
+
+  @media (max-width: 400px) {
+    padding: 30px 10px;
+
+    .logo {
+      margin-top: 30px;
+    }
+
+    h1 {
+      margin-top: 100px;
+
+      span {
+        font-size: 70px;
+      }
+    }
+
+    .watch {
+      P {
+        letter-spacing: 7px;
+      }
+  }
+
+    .social-media {
+      gap: 0;
+      justify-content: space-between;
+    }
   }
 `;

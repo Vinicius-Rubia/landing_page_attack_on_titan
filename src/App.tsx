@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="App">
       <ContentText className="contentText" />
-      <div>
+      <div className="section-trailer">
         <Slide className="slider" />
         <Trailer className="trailer" />
       </div>

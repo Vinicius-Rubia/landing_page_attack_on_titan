@@ -9,16 +9,16 @@ interface ITrailer {
 
 const Trailer = ({ className }: ITrailer) => {
   return (
-    <>
+    <StyledTrailer className={className}>
       <StyledTitleSpan fontSize="md" fontWeight={500}>
         Trailers
       </StyledTitleSpan>
-      <StyledTrailer className={className}>
+      <div className="card-trailer">
         {trailerData.map((trailer, index) => (
-          <TrailerCard key={index} trailer={trailer} />
+            <TrailerCard key={index} trailer={trailer} />
         ))}
-      </StyledTrailer>
-    </>
+      </div>
+    </StyledTrailer>
   );
 };
 

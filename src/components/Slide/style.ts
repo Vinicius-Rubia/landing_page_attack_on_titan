@@ -21,7 +21,7 @@ export const StyledSlide = styled.section`
       gap: 15px;
       font-size: 20px;
       font-weight: 500;
-      
+
       .start {
         color: ${({ theme }) => theme.colors.whitePrimary};
       }
@@ -34,6 +34,26 @@ export const StyledSlide = styled.section`
         width: 64px;
         height: 3px;
         background: ${({ theme }) => theme.colors.transparentColor};
+      }
+    }
+  }
+
+  @media (max-width: 1200px) {
+    .controls {
+      margin-left: 25px;
+    }
+  }
+
+  @media (max-width: 400px) {
+    .controls {
+      margin-left: 10px;
+
+      svg {
+        font-size: 35px;
+      }
+
+      .slide-counter {
+        margin-right: 10px;
       }
     }
   }
