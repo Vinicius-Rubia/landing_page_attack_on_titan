@@ -7,7 +7,7 @@ Esse projeto é uma landing page baseado no anime "Attack on Titan" no layout e 
 - Typescript
 - Styled Components
 
-Você pode ver o projeto funcionado aqui: [Landing Page - Attack on Titan](https://attackontitan.vercel.app/)
+Você pode ver o projeto funcionado aqui: [Landing Page - Attack on Titan](https://attackontitan-anime.vercel.app/)
 
 ## Layout
 
