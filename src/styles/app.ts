@@ -8,7 +8,7 @@ export const StyledContainer = styled.div`
     "contentText  slider"
     "contentText  trailer";
 
-  @media (max-width: 1200px) {
+  @media (max-width: 1400px) {
     grid-template-rows: auto auto auto;
     grid-template-areas:
       "contentText contentText"
