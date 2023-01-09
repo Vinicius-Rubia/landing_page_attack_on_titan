@@ -3,16 +3,23 @@ import Logo from "../../img/logo.svg";
 import Play from "../../img/play.svg";
 import { StyledParagraph, StyledTitleSpan } from "../../styles/typography";
 import { RiMenu2Fill } from "react-icons/ri";
+import { useState } from "react";
+import Sidebar from "../Menu/Sidebar";
 
 export interface IContentText {
   className: string;
 }
 
 const ContentText = ({ className }: IContentText) => {
+  const [sidebar, setSidebar] = useState<boolean>(false);
+
+  const showSidebar = () => setSidebar(!sidebar);
+
   return (
     <StyledContentText className={className}>
       <div className="menu">
-        <RiMenu2Fill fontSize={32} />
+        <RiMenu2Fill fontSize={32} onClick={showSidebar} />
+        {sidebar && <Sidebar active={setSidebar} />}
       </div>
       <div>
         <img className="logo" src={Logo} alt="Logo" />
