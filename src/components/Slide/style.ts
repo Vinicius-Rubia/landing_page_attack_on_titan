@@ -5,6 +5,21 @@ export const StyledSlide = styled.section`
   display: flex;
   flex-direction: column;
 
+  .carousel {
+    display: flex;
+    scroll-behavior: smooth;
+    overflow-x: auto;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    img {
+      width: 100%;
+      flex: none;
+    }
+  }
+
   .controls {
     display: flex;
     justify-content: space-between;
