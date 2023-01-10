@@ -8,7 +8,7 @@ export const StyledSlide = styled.section`
   .carousel {
     display: flex;
     scroll-behavior: smooth;
-    overflow-x: auto;
+    overflow-x: hidden;
 
     &::-webkit-scrollbar {
       display: none;
@@ -42,7 +42,7 @@ export const StyledSlide = styled.section`
       }
 
       .end {
-        color: ${({ theme }) => theme.colors.transparentColor};
+        color: ${({ theme }) => theme.colors.whiteSecondary};
       }
 
       .line-counter {
