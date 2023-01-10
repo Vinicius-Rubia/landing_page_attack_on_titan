@@ -11,11 +11,11 @@ interface ITrailer {
 }
 
 const Trailer = ({ className }: ITrailer) => {
-  const carousel = useRef<HTMLDivElement>(null);
-  const [width, setWidth] = useState(0);
+  const carousel = useRef<any>(null);
+  const [width, setWidth] = useState<number>(0);
 
   useEffect(() => {
-    setWidth(carousel.current?.scrollWidth - carousel.current?.offsetWidth);
+    setWidth(carousel.current?.scrollWidth - carousel.current?.offsetWidth)
   }, []);
 
   return (
